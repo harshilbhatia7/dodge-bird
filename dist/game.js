@@ -2919,13 +2919,13 @@ vec4 frag(vec3 pos, vec2 uv, vec4 color, sampler2D tex) {
     fullscreen: true,
     mobile: true
   });
-  loadSprite("background", "../sprites/background.jpg");
-  loadSprite("bird", "../sprites/dodgebird.png");
-  loadSprite("pipe", "../sprites/pipe.png");
-  loadSound("OtherworldlyFoe", "../sounds/OtherworldlyFoe.mp3");
-  loadSound("wooosh", "../sounds/wooosh.mp3");
-  loadSound("bug", "../sounds/bug.mp3");
-  loadSound("danger", "../sounds/danger.mp3");
+  loadSprite("background", "sprites/background.jpg");
+  loadSprite("bird", "sprites/dodgebird.png");
+  loadSprite("pipe", "sprites/pipe.png");
+  loadSound("OtherworldlyFoe", "sounds/OtherworldlyFoe.mp3");
+  loadSound("wooosh", "sounds/wooosh.mp3");
+  loadSound("bug", "sounds/bug.mp3");
+  loadSound("danger", "sounds/danger.mp3");
   var playMusic = play("OtherworldlyFoe", { loop: true, volume: 0.5 });
   var highScoreEasy = localStorage.getItem("highScoreEasy") || 0;
   var highScoreMedium = localStorage.getItem("highScoreMedium") || 0;

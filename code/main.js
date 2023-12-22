@@ -8,13 +8,13 @@ kaboom({
   mobile: true,
 })
 
-loadSprite("background", "../sprites/background.jpg")
-loadSprite("bird", "../sprites/dodgebird.png")
-loadSprite("pipe", "../sprites/pipe.png")
-loadSound("OtherworldlyFoe", "../sounds/OtherworldlyFoe.mp3");
-loadSound("wooosh", "../sounds/wooosh.mp3");
-loadSound("bug", "../sounds/bug.mp3");
-loadSound("danger", "../sounds/danger.mp3");
+loadSprite("background", "sprites/background.jpg");
+loadSprite("bird", "sprites/dodgebird.png");
+loadSprite("pipe", "sprites/pipe.png");
+loadSound("OtherworldlyFoe", "sounds/OtherworldlyFoe.mp3");
+loadSound("wooosh", "sounds/wooosh.mp3");
+loadSound("bug", "sounds/bug.mp3");
+loadSound("danger", "sounds/danger.mp3");
 
 const playMusic = play("OtherworldlyFoe", {loop: true, volume:0.5 });
 let highScoreEasy = localStorage.getItem('highScoreEasy') || 0;
